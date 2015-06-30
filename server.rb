@@ -2,6 +2,7 @@ require 'sinatra'
 
 get '/'  do 
 	
-	"Hello World"
+	File.read(File.join('public', 'Hello.txt'))
+	#"Hello world!"
 end
 	
